@@ -30,7 +30,7 @@ on:
 #  - REPO: repo name on dockerhub
 #  - IMAGE: image name on dockerhub
 env:
-  DOCKERHUB_REPO: mikenye
+  DOCKERHUB_REPO: ngtrthanh
   DOCKERHUB_IMAGE: readsb-protobuf
   GHCR_IMAGE: ${{ github.repository }}
   GHCR_REGISTRY: ghcr.io
@@ -65,12 +65,12 @@ jobs:
 
   build_and_push:
     name: Image Build & Push
-    uses: sdr-enthusiasts/common-github-workflows/.github/workflows/build_and_push_image.yml@main
+    uses: sdr-enthusiasts/ngtrthanh/.github/workflows/build_and_push_image.yml@main
     needs: [hadolint]
     with:
       push_enabled: true
       push_destinations: ghcr.io;dockerhub
-      dockerhub_profile: mikenye #legacy
+      dockerhub_profile: ngtrthanh #legacy
       dockerhub_repo: docker-readsb-protobuf #legacy
       ghcr_repo_owner: ${{ github.repository_owner }}
       ghcr_repo: ${{ github.repository }}
