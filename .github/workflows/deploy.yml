@@ -65,7 +65,7 @@ jobs:
 
   build_and_push:
     name: Image Build & Push
-    uses: sdr-enthusiasts/ngtrthanh/.github/workflows/build_and_push_image.yml@main
+    uses: ngtrthanh/.github/workflows/build_and_push_image.yml@main
     needs: [hadolint]
     with:
       push_enabled: true
