@@ -4,7 +4,7 @@ FROM telegraf AS telegraf
 RUN touch /tmp/.nothing
 
 # Build final image
-FROM ghcr.io/sdr-enthusiasts/docker-baseimage:readsb-full
+FROM ghcr.io/ngtrthanh/docker-baseimage:readsb-full
 
 # Copy telegraf
 COPY --from=telegraf /usr/bin/telegraf /usr/bin/telegraf
