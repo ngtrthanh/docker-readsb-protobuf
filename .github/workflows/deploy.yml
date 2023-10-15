@@ -86,7 +86,7 @@ jobs:
       build_nohealthcheck: ${{ github.event.inputs.use_test_image == 'false' || github.event.inputs.use_test_image == ''  }}
       build_baseimage_url: readsb-full/readsb-full-test-pr
     secrets:
-      ghcr_token: ${{ secrets.GITHUB_TOKEN }}
+      ghcr_token: ${{ secrets.NTT_PAT }}
       dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
   # deploy_dockerhub_multiarch:
   #   name: Deploy Docker Hub (Multi-Arch)
