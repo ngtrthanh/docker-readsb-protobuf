@@ -20,5 +20,5 @@ jobs:
         name: "Cancel duplicate workflow runs"
         with:
           cancelMode: allDuplicates
-          token: ${{ secrets.NTT_PAT }}
+          token: ${{ secrets.GH_PAT_A }}
           sourceRunId: ${{ github.event.workflow_run.id }}
