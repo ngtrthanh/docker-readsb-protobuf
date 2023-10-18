@@ -970,4 +970,4 @@ I also have a [Discord channel](https://discord.gg/sTf9uYF), feel free to [join]
 
 ## Changelog
 
-See the project's [commit history](https://github.com/sdr-enthusiasts/docker-readsb-protobuf/commits/main).
+See the project's [commit history](https://github.com/ngtrthanh/docker-readsb-protobuf/commits/main).
